@@ -4,11 +4,33 @@ import componentuse from "./assets/componentuse.png"
 import reactcreateelement from "./assets/reactcreateelement.png"
 import reactJSX from "./assets/reactJSX.png"
 
+import {useState} from 'react'
+
 function Title(){
   return(
     <>
     <h1>React One Pager</h1>
     <h4>Hui Wang and Samson Wu</h4>
+    </>
+  );
+}
+
+function Counter(){
+  const [count, setCount] = useState(0);
+
+  function increase(){
+    setCount(count + 1);
+  }
+
+  function decrease(){
+    setCount(count - 1);
+  }
+
+  return(
+    <>
+      <button onClick={increase}>+</button>
+      <p>{count}</p>
+      <button onClick={decrease}>-</button>
     </>
   );
 }
@@ -42,6 +64,12 @@ function App() {
     <img src={componentuse}></img>
     <li>Writing the above would show as</li>
     <h1>This is bigmama</h1>
+
+    <h2>React Hooks (useState):</h2>
+    <h3>Below is an example of a component that uses useState</h3>
+    <Counter />
+    <li>If you try creating a constant variable "count", you wouldn't be able to increment/decrement it using the buttons</li>
+    <li>The workaround for this is with useState</li>
     </>
   );
 }
