@@ -74,7 +74,7 @@ function App() {
     <h2>React Component:</h2>
     <li>A component is very similar to an HTML element tag but can have multiple components or other elements in it.</li>
     <li>A component can be defined using a function.</li>
-    <li>The function can only return one element so you can enclose everything in fragments: '<></>'</li>
+    <li>The function can only return one element so you can enclose everything in fragments: {'<></>'}</li>
     <li>This is the syntax for a very basic React component:</li>
     <img src={component} alt="ReactComponent"></img>
     <li>The Title component can be reused multiple times</li>
