@@ -51,6 +51,7 @@ function App() {
     <li>Install Node.js using: sudo apt install nodejs</li>
     <li>Install npm using: sudo apt install npm</li>
     <li>Create your React app in your directory using: npx create-react-app [PATH]</li>
+    <li>Start the development environment using: npm start</li>
     <li>Start building your app by editing src/App.js</li>
 
     <h2>HTML Syntax in JavaScript using JSX:</h2>
