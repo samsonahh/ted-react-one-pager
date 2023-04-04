@@ -44,9 +44,18 @@ function App() {
     <>
     <Title />
 
-    <li>React is a Javascript library for developing front end UI.</li>
+    <li>React is an open-source Javascript library for developing front end UI created by Facebook in 2011.</li>
     <li>React is useful because it only changes what needs to be changed. This makes development a lot faster.</li>
-
+    
+    <h2>ReactJS vs Vanilla Javascript:</h2>
+    <li>Working with a DOM (Document Object Model) on large apps can be difficult to manage in normal JS</li>
+    <li>With React, you don't need to worry about querying and updating DOM elements and instead, build a webpage using reusable components</li>
+    
+    <h2>How React works:</h2>
+    <li>React takes the component trees that we make and creates a virtual DOM.</li>
+    <li>When you make a change, React compares the current virtual DOM with the previous virtual DOM to see what changed.</li>
+    <li>ReactDOM updates the DOM and renders the component tree inside the element with the id, "root".</li>
+  
     <h2>React Setup:</h2>
     <li>Install Node.js using: sudo apt install nodejs</li>
     <li>Install npm using: sudo apt install npm</li>
@@ -65,11 +74,13 @@ function App() {
     <h2>React Component:</h2>
     <li>A component is very similar to an HTML element tag but can have multiple components or other elements in it.</li>
     <li>A component can be defined using a function.</li>
+    <li>The function can only return one element so you can enclose everything in fragments: '<></>'</li>
     <li>This is the syntax for a very basic React component:</li>
     <img src={component}></img>
     <li>The Title component can be reused multiple times</li>
     <li>You can also pass properties into your components:</li>
     <img src={componentprops}></img>
+    <li>'export default [ComponentName]' on the bottom of the file so that the component can be used elsewhere.</li>
     
     <h2>Using the component:</h2>
     <li>You can use the component like a standard HTML element</li>
